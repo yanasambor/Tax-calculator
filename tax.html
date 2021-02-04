@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./assets/js/taxCalc.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Tax calculator</h1>
+        <div class="w-75 m-auto">
+            <div class="form-group mb-3">
+                <label for="incomeInput" class="mb-3">Your income</label>
+                <input oninput="taxResult()" type="number" class="form-control" id="incomeInput" min="1" placeholder="Your income">
+            </div>
+
+        <button onclick="taxResult()" type="button" class="btn btn-warning w-100">Calc your taxes</button>
+
+        <p>Your taxes:<output id="TaxPlace">-</output></p>
+        <p>Your net profit: <output id="netProfitPlace">-</output></p>
+    </div>
+    
+</body>
+</html>
