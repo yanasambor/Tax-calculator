@@ -47,7 +47,7 @@ function taxResult(){
         Tax=fifthLevel+((income-maxincomeLevel[4])*taxRate[5]);
     }
     if(income>minincomeLevel[5]){
-        Tax=sixthLevel+((incomeInput.value-minincomeLevel[5])*taxRate[6]);
+        Tax=sixthLevel+((incomeInput.value-singleDeduction-minincomeLevel[5])*taxRate[6]);
     }
 
     TaxPlace.innerHTML=Tax
